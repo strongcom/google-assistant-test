@@ -1,0 +1,20 @@
+<?xml version ="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 정적 shortcut-->
+    <shortcut
+            android:shortcutId="email"
+            android:enabled="true"
+            android:icon="@drawable/ic_launcher_background"
+            android:shortcutShortLabel="@string/app_name"
+            android:shortcutLongLabel="@string/app_name">
+        <intent
+                android:action="com.example.google_assistant_test.ADD_WEBSITE"
+                android:targetPackage="com.example.google_assistant_test"
+                android:targetClass="com.example.google_assistant_test.MainActivity" />
+    </shortcut>
+
+
+
+</shortcuts>
