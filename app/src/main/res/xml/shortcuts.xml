@@ -15,6 +15,16 @@
                 android:targetClass="com.example.google_assistant_test.MainActivity" />
     </shortcut>
 
-
+    <capability android:name="actions.intent.GET_THING">
+        <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="com.strongcom.google_assistant_test"
+                android:targetClass="com.strongcom.google_assistant_test.MainActivity">
+            <parameter
+                    android:key="name"
+                    android:name="thing.name">
+            </parameter>
+        </intent>
+    </capability>
 
 </shortcuts>
