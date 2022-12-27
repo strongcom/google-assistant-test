@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="AddQueries">
-        <item>Add notice $text1</item>
+        <item>tell me to $title when I go out</item>
+        <item>tell me to $title when door open</item>
+        <item>add door notification $title</item>
     </string-array>
 
 </resources>

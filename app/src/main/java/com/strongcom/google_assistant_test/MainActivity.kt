@@ -5,20 +5,19 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 
-private const val GET_THING = "name"
+private const val CREATE_THING = "name"
+private const val ADD_NOTICE = "title"
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val action = intent?.action
-        val data = intent?.data
-        val action2 = intent?.extras?.getString(GET_THING)
+        val action = intent?.extras?.getString(CREATE_THING)
 
-        Log.d("asdhjfhasdkljfhsa", "get thing "+(action2 ?: "문자"))
-//        Log.d("asdhjfhasdkljfhsa", (action ?: "action 없음"))
-//        Log.d("asdhjfhasdkljfhsa", "data == " + data.toString())
+        Log.d("asdhjfhasdkljfhsa", "custom intent =  "+(action ?: "문자"))
+
+        Toast.makeText(application, "$action",Toast.LENGTH_LONG).show()
 
     }
 }
