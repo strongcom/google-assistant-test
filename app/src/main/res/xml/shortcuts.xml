@@ -8,7 +8,7 @@
         <intent
                 android:action="android.intent.action.VIEW"
                 android:targetPackage="com.strongcom.google_assistant_test"
-                android:targetClass="com.strongcom.google_assistant_test.MainActivity">
+                android:targetClass="com.strongcom.google_assistant_test.AddActivity">
             <url-template android:value="https://example.com{?title}" />
             <parameter
                     android:name="title"
@@ -21,7 +21,7 @@
         <intent
                 android:action="android.intent.action.VIEW"
                 android:targetPackage="com.strongcom.google_assistant_test"
-                android:targetClass="com.strongcom.google_assistant_test.MainActivity">
+                android:targetClass="com.strongcom.google_assistant_test.AddActivity">
             <!-- Eg. name = "Example Entity" -->
             <parameter
                     android:name="thing.name"
